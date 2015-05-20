@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FBKVOController'
-  spec.version      = '1.0.4'
+  spec.version      = '1.0.5'
   spec.license      =  { :type => 'BSD' }
-  spec.homepage     = 'https://github.com/maximkhatskevich/FBKVOController'
+  spec.homepage     = 'https://github.com/facebook/KVOController'
   spec.authors      = { 'Kimon Tsinteris' => 'kimon@mac.com' }
   spec.summary      = 'Simple, modern, thread-safe key-value observing.'
   spec.description  = <<-DESC
