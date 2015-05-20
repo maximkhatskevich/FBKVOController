@@ -1,6 +1,6 @@
-Pod::s.new do |s|
+Pod::Spec.new do |s|
   s.name         = 'FBKVOController'
-  s.version      = '1.0.7'
+  s.version      = '1.0.8'
   s.license      =  { :type => 'BSD', :file => "LICENSE" }
   s.homepage     = 'https://github.com/facebook/KVOController'
   s.authors      = { 'Kimon Tsinteris' => 'kimon@mac.com' }
