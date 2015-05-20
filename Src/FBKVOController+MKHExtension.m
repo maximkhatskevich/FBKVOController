@@ -12,7 +12,7 @@
 
 - (void)bindWithObject:(id)object
                keyPath:(SEL)keyPath
-               handler:(void(^)(id newValue))handler
+               handler:(void(^)(id oldValue, id newValue))handler
 {
     if (handler)
     {
@@ -22,7 +22,7 @@
          options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
          block:^(id observer, id object, NSDictionary *change) {
              
-             handler(change[NSKeyValueChangeNewKey]);
+             handler(change[NSKeyValueChangeOldKey], change[NSKeyValueChangeNewKey]);
          }];
     }
 }
