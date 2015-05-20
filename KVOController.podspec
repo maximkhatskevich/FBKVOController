@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'KVOController'
-  spec.version      = '1.0.3'
+  spec.version      = '1.0.4'
   spec.license      =  { :type => 'BSD' }
   spec.homepage     = 'https://github.com/facebook/KVOController'
   spec.authors      = { 'Kimon Tsinteris' => 'kimon@mac.com' }
