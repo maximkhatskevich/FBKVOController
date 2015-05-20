@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'KVOController'
+  spec.name         = 'FBKVOController'
   spec.version      = '1.0.4'
   spec.license      =  { :type => 'BSD' }
-  spec.homepage     = 'https://github.com/facebook/KVOController'
+  spec.homepage     = 'https://github.com/maximkhatskevich/FBKVOController'
   spec.authors      = { 'Kimon Tsinteris' => 'kimon@mac.com' }
   spec.summary      = 'Simple, modern, thread-safe key-value observing.'
   spec.description  = <<-DESC
@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
                       
                       Single class: FBKVOController
                       DESC
-  spec.source       = { :git => 'https://github.com/facebook/KVOController.git', :tag => "#{s.version}" }
-  spec.source_files = 'FBKVOController/*.{h,m}'
+  spec.source       = { :git => 'https://github.com/maximkhatskevich/FBKVOController.git', :tag => "#{s.version}" }
+  spec.source_files = 'Src/*.{h,m}'
   spec.requires_arc = true
 
   spec.ios.deployment_target = '6.0'

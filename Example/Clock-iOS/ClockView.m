@@ -9,7 +9,7 @@
 
 #import "ClockView.h"
 #import "ClockLayer.h"
-#import <FBKVOController/FBKVOController.h>
+#import "FBKVOController.h"
 
 #define CLOCK_LAYER(VIEW) ((ClockLayer *)VIEW.layer)
 
