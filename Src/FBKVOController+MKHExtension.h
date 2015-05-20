@@ -12,6 +12,6 @@
 
 - (void)bindWithObject:(id)object
                keyPath:(SEL)keyPath
-               handler:(void(^)(id newValue))handler;
+               handler:(void(^)(id oldValue, id newValue))handler;
 
 @end
