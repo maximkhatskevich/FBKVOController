@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
                       
                       Single class: FBKVOController
                       DESC
-  spec.source       = { :git => 'https://github.com/facebook/KVOController.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/facebook/KVOController.git', :tag => "#{s.version}" }
   spec.source_files = 'FBKVOController/*.{h,m}'
   spec.requires_arc = true
 
