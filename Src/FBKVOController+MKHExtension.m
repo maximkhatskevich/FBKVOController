@@ -22,7 +22,11 @@
          options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
          block:^(id observer, id object, NSDictionary *change) {
              
-             handler(change[NSKeyValueChangeOldKey], change[NSKeyValueChangeNewKey]);
+             id oldValue = change[NSKeyValueChangeOldKey];
+             id newValue = change[NSKeyValueChangeNewKey];
+             
+             handler(([oldValue isKindOfClass:NSNull.class] ? nil : oldValue),
+                     ([newValue isKindOfClass:NSNull.class] ? nil : newValue));
          }];
     }
 }
