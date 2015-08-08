@@ -19,7 +19,7 @@
         [self
          observe:object
          keyPath:NSStringFromSelector(keyPath)
-         options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+         options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew
          block:^(id observer, id object, NSDictionary *change) {
              
              id oldValue = change[NSKeyValueChangeOldKey];
