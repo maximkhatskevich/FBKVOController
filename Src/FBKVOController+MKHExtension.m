@@ -25,8 +25,23 @@
              id oldValue = change[NSKeyValueChangeOldKey];
              id newValue = change[NSKeyValueChangeNewKey];
              
-             handler(([oldValue isKindOfClass:NSNull.class] ? nil : oldValue),
-                     ([newValue isKindOfClass:NSNull.class] ? nil : newValue));
+             //===
+             
+             BOOL shouldProceed = YES;
+             
+             if ([oldValue isKindOfClass:NSObject.class] &&
+                 [newValue isKindOfClass:NSObject.class])
+             {
+                 shouldProceed = ![(NSObject *)oldValue isEqual:newValue];
+             }
+             
+             //===
+             
+             if (shouldProceed)
+             {
+                 handler(([oldValue isKindOfClass:NSNull.class] ? nil : oldValue),
+                         ([newValue isKindOfClass:NSNull.class] ? nil : newValue));
+             }
          }];
     }
 }
